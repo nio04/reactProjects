@@ -1,0 +1,122 @@
+.pizza {
+	&--container {
+		min-height: 100vh;
+		min-width: 100vw;
+		background-color: #ffe4c48c;
+		padding: 2rem;
+	}
+
+	&--header {
+		margin: 2rem 0;
+		text-transform: uppercase;
+		font-size: 3.8rem;
+		text-align: center;
+		color: #909072;
+		padding: 1rem 3rem;
+
+		&::before {
+			content: '<';
+			display: inline-block;
+			height: 5rem;
+			width: 5rem;
+			color: #d1a46e;
+		}
+		&::after {
+			content: '>';
+			display: inline-block;
+			height: 5rem;
+			width: 5rem;
+			color: #d1a46e;
+		}
+	}
+
+	&--menu {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin: 5rem 2rem;
+		grid-gap: 5rem 5rem;
+		&__header {
+			grid-column: 1 / -1;
+			font-size: 3rem;
+			text-transform: uppercase;
+			text-align: center;
+			color: #77544c;
+			padding: 2rem 0;
+			border: 2px solid #909072;
+		}
+	}
+
+	&--footer {
+		font-size: 2rem;
+		margin-bottom: -5rem;
+		text-align: center;
+
+		&__btn {
+			border: none;
+			font-size: 1.7rem;
+			background-color: yellow;
+			color: green;
+			padding: 1rem 2rem;
+			border-radius: 0.8rem;
+			text-transform: uppercase;
+			font-weight: 600;
+			cursor: pointer;
+		}
+	}
+
+	// PIZZA ELEMENTS
+	&__section {
+		&--container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			gap: 1rem;
+			border-radius: 2rem;
+			box-shadow: 0 2px 7px 7px rgba(0, 0, 0, 0.3);
+			list-style-type: none;
+			width: 50rem;
+		}
+
+		&--el {
+			position: relative;
+			background-color: azure;
+			width: 20rem;
+			margin: 2rem;
+			border-radius: 1rem;
+			box-shadow: 0 3px 4px 4px rgba(0, 0, 0, 0.2);
+		}
+		&--img {
+			height: 8rem;
+			width: 8rem;
+			border-radius: 50%;
+			transform: translateX(60%);
+			margin-top: 1rem;
+		}
+		&--name {
+			text-transform: uppercase;
+			font-size: 1.4rem;
+			color: #917f68;
+			padding-left: 2rem;
+			margin-top: 1.6rem;
+		}
+
+		&--description {
+			margin: 0 1rem 2rem 2rem;
+			font-size: 1.5rem;
+			line-height: 1.5;
+		}
+		&--price {
+			position: absolute;
+			right: 0rem;
+			bottom: 0rem;
+			font-size: 1.4rem;
+			border-radius: 50%;
+			padding: 0.5rem;
+		}
+	}
+
+	&--sold-out {
+		filter: opacity(0.4);
+	}
+}

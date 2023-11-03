@@ -1,0 +1,149 @@
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.8rem;
+	font-family: 'Courier New', Courier, monospace;
+}
+.logo__container {
+	height: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.logo__container h1 {
+	font-size: 4rem;
+	word-spacing: 10px;
+}
+
+.form__container {
+	height: 6rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: bisque;
+}
+.form__container span {
+	font-size: 2.5rem;
+	text-transform: uppercase;
+	margin-left: 10rem;
+}
+
+.form__container select {
+	height: 3.5rem;
+	width: 5rem;
+}
+
+.form__container input {
+	height: 3rem;
+	width: 40vh;
+	margin-left: -15rem;
+	font-size: 2rem;
+	text-align: center;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',
+		Arial, sans-serif;
+	transition: all 0.3s;
+}
+
+.form__container input:focus {
+	outline: none;
+	border-radius: 1.7rem;
+}
+
+.form__container button {
+	width: 10rem;
+	height: 5rem;
+	text-transform: uppercase;
+	font-size: 2rem;
+	margin-left: -15rem;
+	cursor: pointer;
+}
+
+.packingList__container {
+	height: 20rem;
+	width: 90vw;
+	background-color: burlywood;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	align-content: space-around;
+	transform: translateX(4%);
+	padding: 2rem;
+	list-style-type: none;
+	overflow-y: scroll;
+}
+
+.packingList__container li {
+	margin: 2rem 2rem;
+	background-color: #858576;
+	padding: 1rem 2.2rem;
+	border-radius: 1rem;
+}
+
+input[type='checkbox'] {
+	transform: translateY(2px) translateX(-8px);
+}
+
+.actions {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-right: 5rem;
+}
+
+.actions select {
+	height: 3rem;
+	width: 20rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.actions button {
+	margin: 0 4rem;
+	transform: scale(1.2);
+	cursor: pointer;
+}
+
+.item__description {
+	font-size: 1.7rem;
+	font-weight: 600;
+}
+
+.item__quantity {
+	margin-left: 1rem;
+	color: aqua;
+	font-weight: 600;
+	font-size: 2.2rem;
+}
+
+.item__discard {
+	transform: translateX(50%);
+	border: none;
+	height: 2.6rem;
+	width: 2.6rem;
+	border-radius: 1.8rem;
+	cursor: pointer;
+	font-weight: 900;
+	color: red;
+}
+
+.item__packed {
+	text-decoration: line-through;
+	background-color: #c1c1c1 !important;
+	font-weight: 100 !important;
+	font-family: serif;
+	color: gray !important;
+}
+
+.stats__container {
+	height: 10rem;
+	width: 95vw;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	background-color: beige;
+	margin-top: 2rem;
+	transform: translateX(2%);
+}

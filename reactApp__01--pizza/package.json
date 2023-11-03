@@ -1,0 +1,23 @@
+{
+	"name": "reactapp",
+	"version": "1.0.0",
+	"description": "",
+	"source": "src/index.html",
+	"scripts": {
+		"dev": "parcel src/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"browserslist": ">0.5%, last 10 versions, IE11",
+	"devDependencies": {
+		"parcel": "^2.9.3",
+		"process": "^0.11.10"
+	},
+	"dependencies": {
+		"@parcel/transformer-sass": "^2.9.3",
+		"parcel-reporter-static-files-copy": "^1.5.3",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	}
+}

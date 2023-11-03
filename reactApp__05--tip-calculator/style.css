@@ -1,0 +1,62 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.9rem;
+	height: 80vh;
+	width: 90vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.app-view--btn {
+	height: 10rem;
+	width: 10rem;
+	font-size: 5rem;
+	position: absolute;
+	top: 3rem;
+	left: 2rem;
+}
+.logo {
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 3rem;
+}
+
+.selecting-friends__container {
+	position: absolute;
+	top: 3rem;
+	right: 2rem;
+	font-size: 2.2rem;
+}
+
+.selecting-friends__container label {
+	padding-right: 2rem;
+}
+
+.selecting-friends__container select {
+	height: 3rem;
+	width: 4rem;
+}
+
+.bill-info {
+	margin-bottom: 2rem;
+}
+.bill-info span {
+	padding-right: 1rem;
+}
+.feedback__container {
+	margin-bottom: 2rem;
+}
+.feedback__container span {
+	padding-right: 1rem;
+}
+.tip-calc {
+	margin-bottom: 2rem;
+}
+button,
+select {
+	cursor: pointer;
+}

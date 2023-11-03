@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+body {
+	overflow-x: hidden;
+	position: relative;
+}
+
+/* COMPONENT START */
+
+.btn {
+	height: 4rem;
+	width: auto;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 0 1rem;
+	margin-right: 1.2rem;
+	cursor: pointer;
+}
+
+.sm-btn {
+	height: 2rem;
+	width: 2rem;
+	margin: 0 1rem;
+	cursor: pointer;
+}
+
+.line-through {
+	text-decoration: line-through;
+}
+
+/* COMPONENT END */
+
+.app-show--btn {
+	position: absolute;
+	top: 1rem;
+	left: 1.5rem;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+.logo__container {
+	height: 4rem;
+	width: 90vw;
+	text-align: center;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	border: 3px solid aqua;
+	margin: 1rem auto;
+}
+
+.logo--span {
+	font-size: 1.3rem;
+	color: gray;
+	font-weight: 900;
+}
+
+.form__container {
+	height: 6rem;
+	width: 95vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 3px solid black;
+	margin: 0 auto;
+	margin-top: 5rem;
+}
+
+.form__msg {
+	margin-right: auto;
+	margin-left: 2rem;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.form__select {
+	height: 3rem;
+	width: 4rem;
+	cursor: pointer;
+}
+
+.form__input {
+	height: 3rem;
+	width: 22rem;
+	margin: 0 2rem;
+}
+
+.packing__container {
+	height: 35rem;
+	width: 90vw;
+	border: 2px solid gray;
+	margin: 1.5rem auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.packing__container ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+[type='checkbox'] {
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+.packing__container ul li {
+	height: 4rem;
+	width: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.8rem;
+	border: 2px solid #2ba50d;
+	border-radius: 0.5rem;
+	margin: 2rem;
+	padding-left: 1rem;
+}
+
+.actions {
+	margin-top: auto;
+	height: 4rem;
+	transform: translate(40%, 0%);
+}
+.actions select {
+	width: 20rem;
+	height: 2rem;
+	margin-right: 3rem;
+	cursor: pointer;
+}
+
+.footer__container {
+	height: 5rem;
+	width: 90vw;
+	margin: 0 auto;
+	border: 2px solid yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__container p {
+	font-size: 2rem;
+	font-style: italic;
+	text-transform: uppercase;
+}
+
+.footer__container p .packed__num {
+	color: green;
+	font-weight: 900;
+	font-size: 2.5rem;
+}
+.footer__container p .unPacked__num {
+	color: red;
+	font-weight: 900;
+	font-size: 2.5rem;
+}
